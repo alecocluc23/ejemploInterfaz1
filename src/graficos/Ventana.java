@@ -9,11 +9,15 @@ public class Ventana extends JFrame {
     private static final int ALTO = 200;
 
     public Ventana() {
+        setLayout(null);
         setTitle("Ventana");
         setSize(ANCHO, ALTO);
         setLocationRelativeTo(null);
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
-        getContentPane().add(new Etiqueta());
+        Etiqueta etiqueta = new Etiqueta();
+        add(etiqueta);
+        Boton boton = new Boton();
+        add(boton);
         inicializarComponentes();
         setVisible(true);
 

@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Etiqueta extends JLabel {
-    private static final int ANCHO = 400;
+    private static final int ANCHO = 300;
     private static final int ALTO = 30;
     private static final int CoordX = 0;
     private static final int CoordY = 0;
