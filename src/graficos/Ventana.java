@@ -13,6 +13,7 @@ public class Ventana extends JFrame {
         setSize(ANCHO, ALTO);
         setLocationRelativeTo(null);
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
+        getContentPane().add(new Etiqueta());
         inicializarComponentes();
         setVisible(true);
 
