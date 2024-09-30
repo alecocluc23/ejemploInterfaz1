@@ -11,7 +11,6 @@ public class Etiqueta extends JLabel {
         setText("Etiqueta");
         setFont(new Font("Arial", Font.BOLD, 20));
         setSize(ANCHO, ALTO);
+        setVisible(true);
     }
-}
-
 }
