@@ -22,7 +22,8 @@ public class Ventana extends JFrame {
         boton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Boton pulsado");
+                etiqueta.setText("Boton pulsado");
+                getContentPane().setBackground(Color.CYAN);
             }
         });
 
