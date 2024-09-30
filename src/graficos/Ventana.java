@@ -2,8 +2,6 @@ package graficos;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 
 public class Ventana extends JFrame {
@@ -19,12 +17,11 @@ public class Ventana extends JFrame {
         Etiqueta etiqueta = new Etiqueta();
         add(etiqueta);
         Boton boton = new Boton();
-        boton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                etiqueta.setText("Boton pulsado");
-                getContentPane().setBackground(Color.CYAN);
-            }
+        boton.addActionListener(e -> {
+            float red = (float) Math.random();
+            float green = (float) Math.random();
+            float blue = (float) Math.random();
+            etiqueta.setForeground(new Color(red, green, blue));
         });
 
         add(boton);
